@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elegant Hair Salon</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f9f9f9;
+}
+
+header{
+background:#c2185b;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+nav{
+background:#333;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+section{
+padding:40px;
+text-align:center;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.service{
+background:white;
+padding:20px;
+margin:15px;
+width:220px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+background:#c2185b;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+form{
+background:white;
+padding:25px;
+width:300px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+<script>
+
+function bookAppointment(){
+alert("✅ Appointment booked successfully!");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Elegant Hair Salon</h1>
+<p>Your beauty is our priority</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#booking">Book Appointment</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section>
+<h2>Welcome to Our Salon</h2>
+<p>We provide professional hair care and styling services.</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Haircut</h3>
+<p>Professional hair cutting and styling.</p>
+</div>
+
+<div class="service">
+<h3>Hair Braiding</h3>
+<p>Beautiful braids by experienced stylists.</p>
+</div>
+
+<div class="service">
+<h3>Hair Coloring</h3>
+<p>Modern hair coloring services.</p>
+</div>
+
+<div class="service">
+<h3>Hair Treatment</h3>
+<p>Deep conditioning and scalp care.</p>
+</div>
+
+</div>
+</section>
+
+<section id="booking">
+
+<h2>Book an Appointment</h2>
+
+<form onsubmit="bookAppointment(); return false;">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option>Select Service</option>
+<option>Haircut</option>
+<option>Braiding</option>
+<option>Hair Coloring</option>
+<option>Hair Treatment</option>
+</select>
+
+<input type="date" required>
+
+<br>
+
+<button type="submit">Book Now</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+
+<p>📍 Location: City Beauty Street</p>
+<p>📞 Phone: +254 700 000000</p>
+<p>📧 Email: salon@email.com</p>
+
+</section>
+
+<footer>
+<p>© 2026 Elegant Hair Salon</p>
+</footer>
+
+</body>
+</html>
